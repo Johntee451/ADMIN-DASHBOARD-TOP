@@ -125,7 +125,11 @@ body, html{
 #status{
     display: grid;
     grid-template-rows: repeat(1, 0.5fr);
-    padding: 100px;
+    padding: 50px;
+    min-width: 550px;
+    min-height: 300px;
+    width: 50vw;
+    height: 20vh;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -135,9 +139,9 @@ body, html{
 
 #innerStatus{
     display: flex;
-    width: 700px;
     gap: 30px;
-    height: 250px;
+    min-width: 250px;
+    min-height: 300px;
     padding: 20px;
     box-sizing: border-box;
     flex-direction: row;
