@@ -67,6 +67,11 @@ h1, h2, h3{
     grid-column: 1/2;
 }
 
+#sidebarSection{
+    border: 5px solid green;
+    padding-right: 50px;
+}
+
 #sidebarSect1 ul{
     display: flex;
     gap: 20px;
