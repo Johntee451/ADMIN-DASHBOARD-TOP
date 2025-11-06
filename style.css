@@ -1,14 +1,17 @@
 body, html{
     margin: 0;
-    height: 100%;
 }
 
 #mainContainer{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(1, 0.0625fr) repeat(1, 1fr) repeat(1, 0.03125fr);
+    /* flex-wrap: wrap;
+    flex-direction: row; */
     color: rgb(56, 55, 55);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-family: Ruda;
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -107,8 +110,10 @@ body, html{
 
 #content{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding-top: 70px;
     padding-bottom: 55px;
@@ -118,28 +123,27 @@ body, html{
 }
 
 #status{
-    display: flex;
-    width: 1200px;
-    height: 350px;
-    box-sizing: border-box;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: repeat(1, 0.5fr);
+    padding: 100px;
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 2px 2px 3px 3px grey;
 }
 
 #innerStatus{
     display: flex;
-    width: 800px;
+    width: 700px;
+    gap: 30px;
     height: 250px;
     padding: 20px;
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 50px;
     border-top: 5px solid goldenrod;
     border-bottom: 5px solid goldenrod;
 }
